@@ -135,6 +135,29 @@ wfLoadSkin( 'Vector' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
+
 wfLoadExtension( 'VisualEditor' );
 
+## User related extensions
+
+# Prevent new user registrations except by sysops
+$wgGroupPermissions['*']['createaccount'] = false;
+
+# Make wiki private (read-only).
+$wgGroupPermissions['*']['read'] = false;
+
+# Require email address to edit.
+$wgEmailConfirmToEdit = true;
+
+wfLoadExtension( 'GoogleLogin' );
+# GoogleLogin settings in LocalSettings.Secret.php
+
+wfLoadExtension( 'Renameuser' );
+
+wfLoadExtension( 'UserMerge' );
+// By default nobody can use this function, enable for bureaucrat?
+$wgGroupPermissions['bureaucrat']['usermerge'] = true;
+
 $wgTmpDirectory = "/home1/ramanuja/tmp_h0dqld";
+
+include 'LocalSettings.Secret.php';

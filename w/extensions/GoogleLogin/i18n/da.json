@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"googlelogin": "Log ind med Google",
+	"googlelogin-manage-orgsince": "Siden",
+	"googlelogin-manage-yes": "ja",
+	"googlelogin-manage-no": "nej",
+	"googlelogin-manage-errorloading": "Indlæsningsfejl",
+	"googlelogin-desc-authmanager": "Tillad brugere at logge ind med deres Google konto"
+}
