@@ -155,6 +155,7 @@ wfLoadExtension( 'GoogleLogin' );
 wfLoadExtension( 'Renameuser' );
 
 wfLoadExtension( 'UserMerge' );
+wfLoadExtension( 'PageForms' );
 // By default nobody can use this function, enable for bureaucrat?
 $wgGroupPermissions['bureaucrat']['usermerge'] = true;
 
